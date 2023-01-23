@@ -1,0 +1,15 @@
+
+################### codeigniter4 ci4_multiauth ##############
+
+1. composer create-project codeigniter4/appstarter ci4_multiauth
+2. cd ci4_multiauth
+3. php spark make:model User --suffix
+4. php spark make:seeder User --suffix
+5. php spark db:seed userSeeder
+6. php spark make:controller User  --suffix
+7. php spark make:controller Admin --suffix
+8. php spark make:controller Editor --suffix
+9. php spark make:filter Auth
+10. php spark make:filter Noauth
+11. php spark make:validation Userrules
+12. 

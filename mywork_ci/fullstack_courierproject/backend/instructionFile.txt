@@ -1,0 +1,67 @@
+
+##############CodeIgniter4 Courier Project Backend############
+
+################26 December 2022###############
+
+1.AdminLte download
+2.htdocs/wdpf51_codeIgniter/classwork_ci/fullstack_courierproject
+3.composer create-project codeigniter4/appstarter backend
+4. cd backend
+5.create database named fullstack_courierproject
+6.Database connection with env file and environment
+7.php spark serve
+8.php spark make:controller dashboard
+9.Default Controller, Route in routes.php
+10.dist, plugins folder from adminlte copied to public/assets folder
+11. copied all codes from index.html to admin_home.php and updated path
+12.templating for dashboard.php
+
+###############Staffs Table#############################
+
+13.Migration for Staffs (php spark make:migration Staffs)
+14.Model for StaffModel (php spark make:model StaffModel)
+15.Controller for Staffs (php spark make:controller Staffs --restful)
+16.Routes update for Staffs 
+
+17.php spark migrate
+18.php spark migrate:status
+19.php spark migrate:refresh
+
+20.Find out the all command (php spark)
+21.php spark migrate:rollback
+22.php spark routes
+################27 December 2022###############
+23.php spark make:seeder staffsSeeder
+24.php spark db:seed   //OR// php spark db:seed staffsSeeder
+################29December 2022###################
+//Staff image upload
+##################Branch Table####################
+25. Staff image upload
+26. Branch Table(id, branch_name)
+27. Migration for Branches(php spark make:migration Branches)
+28. Model for BranchModel (php spark make:model BranchModel)
+29. Controller for Branches(php spark make:controller Branches --restful)
+30. php spark make:seeder branchesSeeder
+31. php spark db:seed   //OR// php spark db:seed branchesSeeder
+######################Product Table######################
+Product Table()
+32. Migration for Products (php spark make:migration Products)
+33. Model for ProductModel (php spark make:model ProductModel)
+34. Controller for Products (php spark make:controller Products --restful)
+35. php spark migrate
+36. php spark make:seeder productsSeeder
+37. php spark db:seed   //OR// php spark db:seed productsSeeder
+########################Parcels Table#################
+38. Migration for Parcels(php spark make:migration Parcels)
+39. Model for ParcelModel (php spark make:model ParcelModel)
+40. Controller for Parcels (php spark make:controller Parcels --restful)
+41.  php spark migrate
+42. php spark make:seeder parcelsSeeder
+43. php spark db:seed   //OR// php spark db:seed parcelsSeeder
+######################## Parcels Track ############
+44. Migration for Parcels Tracks (php spark make:migration Parceltracks)
+45. Model for Parcel_tracksModel (php spark make:model ParceltracksModel )
+46. Controller for Parcel_tracks (php spark make:controller Parceltracks --restful)
+47. php spark migrate
+48. php spark make:seeder parceltracksSeeder
+49. php spark db:seed   //OR// php spark db:seed parceltracksSeeder

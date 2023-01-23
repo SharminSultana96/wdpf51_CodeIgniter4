@@ -1,0 +1,29 @@
+
+################CodeIgniter4 project3######################
+
+1. composer create-project codeigniter4/appstarter ci4project3
+
+2. cd ci4project3
+
+3. php spark serve
+	-(http://localhost:8080)
+
+4.Student CRUD:
+	- Student Migration => (php spark make:migration Student)
+	- Student Migrate => (php spark migrate)
+	- Student Model => (php spark make:model studentModel)
+	- Student Controller => (php spark make:controller student)
+			   (php spark make:controller student --restful)
+	- Student View
+
+5. php spark migrate:refresh
+
+6.Product CRUD:
+	-Product Migration => (php spark make:migration Product)
+	-Product Migrate => (php spark migrate)
+	-Product Model => (php spark make:model productModel)
+	-Product Controller => (php spark make:controller product)
+			  (php spark make:controller product --restful)
+	-Product View
+
+7. php spark migrate:refresh

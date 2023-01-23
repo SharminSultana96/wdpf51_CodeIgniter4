@@ -1,0 +1,19 @@
+Codeigniter project Installation
+1.E:\xampp\htdocs>composer create-project codeigniter4/appstarter ci4project1
+2.E:\xampp\htdocs>cd ci4project1
+3.E:\xampp\htdocs\cd ci4project1>php spark serve
+4.if necessary update( composer update)
+5. Make Controller:
+	E:\xampp\htdocs\ci4project1>php spark make:controller pages
+6. Make hello:
+	E:\xampp\htdocs\ci4project1>php spark make:hello
+7. Make Model:
+	E:\xampp\htdocs\ci4project1>php spark make:model UserModel
+8.Make usermodel controller:
+	E:\xampp\htdocs\ci4project1>php spark make:controller Usercrud
+
+
+
+
+*************crud system******************
+https://www.positronx.io/codeigniter-crud-with-bootstrap-and-mysql-example/

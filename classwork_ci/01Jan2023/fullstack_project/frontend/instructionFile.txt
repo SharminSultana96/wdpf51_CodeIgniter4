@@ -1,0 +1,26 @@
+
+		React + Codeigniter Project
+
+################### Frontend #####################
+
+1. fullstack_project>npx create-react-app frontend
+2. fullstack_project>cd frontend
+3. fullstack_project\frontend>npm start
+4. fullstack_project\frontend>npm install react-router-dom
+
+
+##################### Backend ################
+5. fullstack_project\backend>php spark make:filter Cors
+
+6. app->filters->Cors.php=>before er moddhe=>
+	header("Access-Control-Allow-Origin: *");
+        header("Access-Control-Allow-Headers: X-API-KEY, Origin,X-Requested-With, Content-Type, Accept, Access-Control-Requested-Method, Authorization");
+        header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PATCH, PUT, DELETE");
+        $method = $_SERVER['REQUEST_METHOD'];
+        if($method == "OPTIONS"){
+            die();
+        }
+
+7.app->config->Filters.php->1.public $aliases er moddhe=> 'cors'=> Cors::class,
+			   2. public $globals before er moddhe=> 'Cors'
+

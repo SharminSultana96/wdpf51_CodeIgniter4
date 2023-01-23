@@ -1,0 +1,68 @@
+
+##############CodeIgniter4 Project Backend############
+
+################26 December 2022###############
+
+1.AdminLte download
+2.htdocs/wdpf51_codeIgniter/classwork_ci/fullstack_project
+3.composer create-project codeigniter4/appstarter backend
+4. cd backend
+5.create database named fullstack_project
+6.Database connection with env file and environment
+7.php spark serve
+8.php spark make:controller dashboard
+9.Default Controller, Route in routes.php
+10.dist, plugins folder from adminlte copied to public/assets folder
+11. copied all codes from index.html to admin_home.php and updated path
+12.templating for dashboard.php
+13.Migration for Products (php spark make:migration Products)
+14.Model for ProductModel (php spark make:model ProductModel)
+15.Controller for Products (php spark make:controller Products --restful)
+16.Routes update for Products
+
+17.php spark migrate
+18.php spark migrate:status
+19.php spark migrate:refresh
+
+20.Find out the all command (php spark)
+21.php spark migrate:rollback
+22.php spark routes
+
+
+################26 December 2022###############
+
+23.php spark make:seeder productsSeeder
+24.php spark db:seed   //OR// php spark db:seed productsSeeder
+
+######################29Dec2022###########################
+
+25. Product image upload
+26. Category Table(id, category_name)
+27. Migration for Category(php spark make:migration Category)
+28. Model for CategoryModel (php spark make:model CategoryModel)
+29. Controller for Category(php spark make:controller Category --restful)
+30. php spark migrate
+
+#####################31Dec 2022#####################
+
+Create User Authentication:
+31. Migration for Users (php spark make:migration Users)
+32. php spark migrate
+33. Model for UsersModel (php spark make:model UsersModel)
+34. Controller for Users(php spark make:controller Users --restful)
+35. php spark migrate
+
+Make Seeder:
+php spark make:seeder usersSeeder
+24.php spark db:seed   //OR// php spark db:seed usersSeeder
+
+
+Create User Authentication:
+31. Migration for Users (php spark make:migration Users)
+32. php spark migrate
+33. Model for UsersModel (php spark make:model UsersModel)
+34. Controller for Users:
+	Signup:(php spark make:controller signupController --restful)
+	Signin:(php spark make:controller signinController --restful)	
+35. php spark migrate
+36.php spark make:filter authguard

@@ -1,0 +1,26 @@
+	##############Query Builder#############
+
+##########From employee Table:
+
+1. firstName, lastName, email those job Title are Sales Rep
+2. firstName, lastName, email those job Title are sales Rep and Reports To 1143
+
+##########From employees and offices Table:
+3. firstName, lastName, email, city, country those are from USA
+
+##########From orders, customers 
+4. customerName, phone, city, orderNumber, orderDate, status
+
+##########From orders, orderdetails, customers
+5. customerName, phone, city, orderNumber, orderDate, status, quantityOrdered, priceEach
+
+#########From orders, orderdetails, customers, products
+6. customerName, city, orderNumber, orderDate, productCode, productName, quantityOrdered, priceEach, MSRP
+7. Country wise order summary
+8. Customer wise order summary
+
+
+
+############# Command #########################
+php spark make:controller querybuilder
+
